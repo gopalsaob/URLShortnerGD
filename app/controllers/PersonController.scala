@@ -12,8 +12,8 @@ import play.api.mvc._
 
 import scala.concurrent.{ExecutionContext, Future}
 
-class PersonController @Inject()(repo: PersonRepository,
-                                  cc: MessagesControllerComponents
+class PersonController @Inject()(repo: UrlPathRepository,
+                                 cc: MessagesControllerComponents
                                 )(implicit ec: ExecutionContext)
   extends MessagesAbstractController(cc) {
 
